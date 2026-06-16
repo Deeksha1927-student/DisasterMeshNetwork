@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SOS Alert</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<body>
+
+<div class="navbar">
+    <h1>🚨 Disaster Communication Mesh Network</h1>
+</div>
+
+<div class="container">
+    <div class="card">
+
+        <h2>Emergency SOS Alert</h2>
+
+        <form method="POST">
+
+            <label>Name:</label><br>
+            <input type="text" name="name"><br><br>
+
+            <label>Location:</label><br>
+            <input type="text" name="location"><br><br>
+
+            <label>Emergency Type:</label><br>
+            <select name="emergency_type">
+                <option>Flood</option>
+                <option>Fire</option>
+                <option>Earthquake</option>
+                <option>Medical Emergency</option>
+            </select><br><br>
+            <label>Latitude:</label>
+            <input type="text" name="latitude">
+            <label>Longitude:</label>
+            <input type="text" name="longitude">
+            <label>Message:</label><br>
+            <textarea name="message" rows="5" cols="30"></textarea><br><br>
+
+            <button type="submit">SEND SOS</button>
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+</body>
+</html>

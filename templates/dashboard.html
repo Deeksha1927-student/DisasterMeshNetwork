@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Rescue Dashboard</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rescue Dashboard</title>
+</head>
+<body>
+<div class="navbar">
+    <h1>🚨 Disaster Communication Mesh Network</h1>
+</div>
+
+<div class="container">
+    <div class="card">
+
+        <h2>Total Emergency Alerts: {{ total_alerts }}</h2>
+        <div class="stats-container">
+
+    <div class="stat-card">
+        <h2>{{ total_alerts }}</h2>
+        <p>🆘 Total Alerts</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>{{ flood_count }}</h2>
+        <p>🌊 Flood</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>{{ fire_count }}</h2>
+        <p>🔥 Fire</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>{{ earthquake_count }}</h2>
+        <p>🌍 Earthquake</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>{{ medical_count }}</h2>
+        <p>🚑 Medical</p>
+    </div>
+
+</div>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Emergency</th>
+                <th>Message</th>
+                <th>route</th>
+                <th>Status</th>
+            </tr>
+
+            {% for alert in alerts %}
+            <tr>
+                <td>{{ alert[0] }}</td>
+                <td>{{ alert[1] }}</td>
+                <td>{{ alert[2] }}</td>
+                <td>{{ alert[3] }}</td>
+                <td>{{ alert[4] }}</td>
+                <td>{{ routes[loop.index0] }}</td>
+                <td>🟡 Pending</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>
