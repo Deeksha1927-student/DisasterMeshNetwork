@@ -1,7 +1,7 @@
-# Disaster MeshConnect
+# Disaster Mesh Network
 
 ## Overview
-Disaster MeshConnect is a hybrid emergency communication system that enables communication during disasters when mobile networks and internet services fail. It uses mesh networking to relay messages between nearby devices and can integrate satellite communication for long-range connectivity.
+Disaster Mesh Network is a hybrid emergency communication system that enables communication during disasters when mobile networks and internet services fail. It uses mesh networking to relay messages between nearby devices and can integrate satellite communication for long-range connectivity.
 
 ## Features
 - User Registration and Login
